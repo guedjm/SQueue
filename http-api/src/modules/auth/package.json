@@ -1,0 +1,5 @@
+{
+  "name": "auth",
+  "description": "The HTTP API Auth module",
+  "version": "1.0.0"
+}

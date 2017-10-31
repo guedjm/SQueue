@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:latest
+    environment:
+      - MYSQL_ROOT_PASSWORD=azerty
+      - MYSQL_DATABASE=squeue
+      - MYSQL_USER=squeue
+      - MYSQL_PASSWORD=toto1234
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  pma:
+    image: phpmyadmin/phpmyadmin:latest
+    environment:
+      - PMA_HOST=mysql
+      - PMA_USER=squeue
+      - PMA_PASSWORD=toto1234
+      - PMA_PORT=3306
+    links:
+      - mysql
+    ports:
+      - "8080:80"

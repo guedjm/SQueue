@@ -1,0 +1,40 @@
+{
+  "name": "squeue-http-api",
+  "version": "0.0.0",
+  "description": "Http api for SQueue project",
+  "main": "index.js",
+  "author": "Maxime Guedj",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/server.js",
+    "dev": "node dev.js",
+    "build": "npm run clean-build && tsc -p tsconfig.json",
+    "clean-build": "rm -rf build",
+    "lint": "tslint -c tslint.json './src/**/*.ts'"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.11.0",
+    "@types/confidence": "1.4.30",
+    "@types/hapi": "16.1.10",
+    "@types/node": "8.0.47",
+    "ts-node": "3.3.0",
+    "tslint": "5.7.0",
+    "tslint-eslint-rules": "2.1.0",
+    "typescript": "2.5.2"
+  },
+  "dependencies": {
+    "boom": "^6.0.0",
+    "commander": "^2.11.0",
+    "confidence": "3.0.2",
+    "dotenv": "4.0.0",
+    "glue": "4.2.1",
+    "hapi": "16.6.2",
+    "inversify": "4.3.0",
+    "joi": "^13.0.1",
+    "knex": "0.13.0",
+    "lodash": "^4.17.4",
+    "mysql": "^2.15.0",
+    "objection": "0.8.9",
+    "reflect-metadata": "0.1.10"
+  }
+}
