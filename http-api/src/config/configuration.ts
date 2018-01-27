@@ -31,7 +31,11 @@ export default class Configuration implements IConfiguration {
 
     private _defaultConfiguration: any = {
         server: {
-            app: {},
+            app: {
+                auth: {
+                    tokenDuration: 3600,
+                }
+            },
         },
         connections: [{
             port: process.env.HTTP_API_PORT,

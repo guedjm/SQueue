@@ -9,7 +9,7 @@
     "start": "node build/server.js",
     "dev": "node dev.js",
     "build": "npm run clean-build && tsc -p tsconfig.json",
-    "clean-build": "rm -rf build",
+  "clean-build": "rm -rf build",
     "lint": "tslint -c tslint.json './src/**/*.ts'"
   },
   "devDependencies": {

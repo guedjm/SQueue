@@ -1,7 +1,7 @@
 import * as Glue from 'glue';
 import mainContainer from './ioc/server.container';
 import {IConfiguration} from './config/interfaces';
-import {connectToDatabase} from './lib/database/connection';
+import {connectToDatabase} from './lib/data/connection';
 
 
 export default class SQueueHttpApiService {

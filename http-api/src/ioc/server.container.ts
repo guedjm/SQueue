@@ -3,7 +3,7 @@ import 'reflect-metadata';
 import {Container} from 'inversify';
 import {IConfiguration} from '../config/interfaces';
 import Configuration from '../config/configuration';
-import databaseContainer from '../lib/database/database.container';
+import databaseContainer from '../lib/data/database.container';
 
 const mainContainer = new Container();
 
